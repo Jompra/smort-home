@@ -1,5 +1,5 @@
 const axios = require('axios')
-const Devices = require('../models/Devices')
+const Devices = require('../../models/Tuya/Devices')
 const { refreshTokens, getAccessToken } = require('./AuthTokens')
 
 async function buildRequestData() {

@@ -1,7 +1,7 @@
 const axios = require('axios')
 const qs = require('qs')
 
-const AuthToken = require('../models/AuthTokens')
+const AuthToken = require('../../models/Tuya/AuthTokens')
 
 const loginData = {
   'userName': process.env.USERNAME,
