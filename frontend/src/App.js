@@ -1,8 +1,12 @@
 import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Topbar from './components/common/Topbar'
 
 function App() {
   return (
-    <h1>Hello World</h1>
+    <BrowserRouter>
+      <Topbar />
+    </BrowserRouter>
   )
 }
 

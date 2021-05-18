@@ -4,6 +4,7 @@ const devices = require('../controllers/PlugSockets/Devices')
 const deviceControl = require('../controllers/PlugSockets/DeviceControl')
 const sonos = require('../controllers/Sonos/DeviceInfo')
 const sonosAuth = require('../controllers/Sonos/Auth')
+const weather = require('../controllers/Weather/WeatherInfo')
 
 router.route('/authorize')
   .get(tokens.getTokens)
@@ -22,6 +23,9 @@ router.route('/sonos/groups')
 router.route('/sonos/auth')
   .get(sonosAuth.getTokens)
   .post(sonosAuth.addTokens)
+
+router.route('/weather/widget')
+  .get(weather.getTodayForecast)
 
 
 
